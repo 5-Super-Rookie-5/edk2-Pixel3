@@ -8,6 +8,9 @@ DO NOT FLASH THIS UEFI FIRMWARE IN YOUR MAIN PHONE !!!
 
 It's very unstable and you may lost your data.
 
+## Show
+![image](https://github.com/sunshuyu/edk2-Pixel3/blob/main/Pictures/PE.jpg) 
+
 ## Status 
  UFS WORK！
 
