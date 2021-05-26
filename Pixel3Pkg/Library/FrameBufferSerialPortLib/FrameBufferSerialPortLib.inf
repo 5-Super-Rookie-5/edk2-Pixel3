@@ -1,0 +1,30 @@
+[Defines]
+  INF_VERSION    = 0x00010005
+  BASE_NAME      = FrameBufferSerialPortLib
+  MODULE_TYPE    = BASE
+  VERSION_STRING = 1.0
+  LIBRARY_CLASS  = SerialPortLib
+
+[Sources.common]
+  FrameBufferSerialPortLib.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ArmPkg/ArmPkg.dec
+  Pixel3Pkg/blueline.dec
+
+[LibraryClasses]
+  ArmLib
+  PcdLib
+  IoLib
+  HobLib
+  CompilerIntrinsicsLib
+  CacheMaintenanceLib
+
+[Pcd]
+  gPixel3PkgTokenSpaceGuid.PcdMipiFrameBufferAddress
+  gPixel3PkgTokenSpaceGuid.PcdMipiFrameBufferWidth
+  gPixel3PkgTokenSpaceGuid.PcdMipiFrameBufferHeight
+  gPixel3PkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp
+  gPixel3PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleWidth
+  gPixel3PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleHeight

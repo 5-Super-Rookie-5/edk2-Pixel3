@@ -1,0 +1,1 @@
+// No you don't need Qualcomm Debug Subsystem on your phone.
